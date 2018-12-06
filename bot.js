@@ -18,6 +18,7 @@ bot.on("ready", () => {
 console.log(`Hello there! I'm signed  as: ${bot.username} with the ID of: ${bot.user.id}!`)
 });
 
+
 bot.on('message', message => {
   let mArray = message.content.split(" ")
   let args = mArray.slice(1)
