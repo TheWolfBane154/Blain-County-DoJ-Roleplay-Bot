@@ -4,6 +4,8 @@ const fs = require("fs");
 const config = require("./config.json");
 var prefix = "!"; 
 
+bot.commands = new Discord.Collection()
+
 fs.readdir("./commands/", (err, files) => {
   console.log("Loading commands...");
   if (err) return console.log(`Command loading failed!`);
