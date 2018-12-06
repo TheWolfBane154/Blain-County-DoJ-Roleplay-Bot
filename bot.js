@@ -15,7 +15,7 @@ fs.readdir("./commands/", (err, files) => {
 });
 
 bot.on("ready", () => {
-console.log(`Hello there! I'm signed  as: ${bot.username} with the ID of: ${bot.username.id}!`)
+console.log(`Hello there! I'm signed  as: ${bot.username} with the ID of: ${bot.user.id}!`)
 });
 
 bot.on('message', message => {
