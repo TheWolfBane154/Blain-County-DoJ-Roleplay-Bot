@@ -6,8 +6,12 @@ let emb = new Discord.RichEmbed()
 .setDescription("Created report")
 .addField("Reason for report:", ja)
 .addField("Reported user:", ru)
+.setColor("RED")
 message.channel.send("Thank you for the report. An Admin+ will review it when they can!")
-bot.channels.get("522387905805680640").send({embed: emb})
+bot.channels.get("522387905805680640").send({embed: emb}).then(function (message) {
+message.react("✅")
+message.react("❌")
+}
 }
 
 module.exports.help = {
