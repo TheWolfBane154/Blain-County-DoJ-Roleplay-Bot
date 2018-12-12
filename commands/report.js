@@ -11,7 +11,7 @@ message.channel.send("Thank you for the report. An Admin+ will review it when th
 bot.channels.get("522387905805680640").send({embed: emb}).then(function (message) {
 message.react("✅")
 message.react("❌")
-}
+})
 }
 
 module.exports.help = {
