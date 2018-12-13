@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
+const DB = require("mongoose");
 const fs = require("fs");
 const config = require("./config.json");
 var prefix = "."; 
