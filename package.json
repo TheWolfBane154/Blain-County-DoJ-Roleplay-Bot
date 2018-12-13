@@ -4,7 +4,8 @@
   "scripts": {
     "start": "node bot.js"
   },
-  "dependencies": {
-    "discord.js": "^11.3.1"
-  }
+ "dependencies": {
+     "discord.js" : "latest",
+     "mongoose": "latest"    
+    }
 }
