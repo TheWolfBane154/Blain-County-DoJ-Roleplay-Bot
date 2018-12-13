@@ -15,6 +15,8 @@ fs.readdir("./commands/", (err, files) => {
   });
 });
 
+DB.connect(`mongodb+srv://AustinGallippo:${process.env.DBPass}@cluster0-4npcn.azure.mongodb.net/test?retryWrites=true`, { useNewUrlParser: true})
+
 bot.on("ready", () => {
 console.log(`Hello there! I'm signed  as: ${bot.username} with the ID of: ${bot.user.id}!`)
 });
