@@ -1,8 +1,10 @@
- "name": "Bane-Bot",
+
+{
+  "name": "Bane-Bot",
   "version": "0.0.1",
- "scripts": {
+  "scripts": {
     "start": "node bot.js"
-},
+  },
   "dependencies": {
     "discord.js": "^11.3.1"
   }
