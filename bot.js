@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
-const DB = require("mongoose");
+
 const fs = require("fs");
 const config = require("./config.json");
 var prefix = "."; 
@@ -15,7 +15,7 @@ fs.readdir("./commands/", (err, files) => {
   });
 });
 
-DB.connect(`mongodb+srv://AustinGallippo:${process.env.DBPass}@cluster0-4npcn.azure.mongodb.net/test?retryWrites=true`, { useNewUrlParser: true})
+
 
 bot.on("ready", () => {
 console.log(`Hello there! I'm signed  as: ${bot.username} with the ID of: ${bot.user.id}!`)
