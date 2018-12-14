@@ -1,4 +1,6 @@
 module.exports.run = (bot, message, args, Discord) => {
+  if(message.author.id == "162690703577710592") return;
+  
 let ja = args.join(" ")
 let ru = message.mentions.members.first();
 let emb = new Discord.RichEmbed()
